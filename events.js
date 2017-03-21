@@ -47,22 +47,3 @@ for (let item of spyArray) {
     });
     document.querySelector('ul').appendChild(li);
 }
-
-// class constructor allows missing @returns tag
-/**
- * Represents a sum.
- */
-class Prefix {
-    /**
-     * @param {number} num1 The first number.
-     * @param {number} num2 The second number.
-     */
-    constructor(num1, num2) {
-        console.log(this);
-    }
-    get width() {
-        return;
-    }
-}
-
-const p = new Prefix();
