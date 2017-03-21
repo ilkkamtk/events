@@ -3,15 +3,15 @@
 const spyArray = [
     {
         'thumbnail': 'http://placekitten.com/320/300',
-        'image': 'http://placekitten.com/768/720',
+        'title': 'Image 1',
     },
     {
         'thumbnail': 'http://placekitten.com/321/300',
-        'image': 'http://placekitten.com/770/720',
+        'title': 'Image 2',
     },
     {
         'thumbnail': 'http://placekitten.com/319/300',
-        'image': 'http://placekitten.com/769/720',
+        'title': 'Image 3',
     },
 ];
 
@@ -29,7 +29,7 @@ for (let link of links) {
     link.addEventListener('click', (evt) => {
         console.log(evt.target);
         // TODO
-        // print the image property of selected item to console
+        // print the title property of selected item to console
     });
 }
 */
@@ -43,7 +43,7 @@ for (let item of spyArray) {
     li.addEventListener('click', (evt) => {
         console.log(evt.target);
         // TODO
-        // print the image property of selected item to console
+        // print the title property of selected item to console
     });
     document.querySelector('ul').appendChild(li);
 }
