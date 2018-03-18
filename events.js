@@ -16,17 +16,18 @@ const picArray = [
 ];
 
 // innerHTML version ***********************
+// question to be answered: Why for-loop does not behave as you would expect
 /*
-for (let item of picArray) {
-    const html = `<li><img src="${item.thumbnail}"></li>`;
+for (let i = 0; i < picArray.length; i++) {
+    const html = `<li><img src="${picArray[i].thumbnail}"></li>`;
     document.querySelector('ul').innerHTML += html;
 }
 
 
 const links = document.querySelectorAll('li');
 
-for (let link of links) {
-    link.addEventListener('click', (evt) => {
+for (let i = 0; i < picArray.length; i++) {
+    picArray[i].addEventListener('click', (evt) => {
         console.log(evt.target);
         // TODO
         // print the title property of selected item to console
