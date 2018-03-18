@@ -1,6 +1,6 @@
 'use strict';
 
-const spyArray = [
+const picArray = [
     {
         'thumbnail': 'http://placekitten.com/320/300',
         'title': 'Image 1',
@@ -17,7 +17,7 @@ const spyArray = [
 
 // innerHTML version ***********************
 /*
-for (let item of spyArray) {
+for (let item of picArray) {
     const html = `<li><img src="${item.thumbnail}"></li>`;
     document.querySelector('ul').innerHTML += html;
 }
@@ -35,7 +35,7 @@ for (let link of links) {
 */
 
 // DOM object version ****************************
-for (let item of spyArray) {
+for (let item of picArray) {
     const li = document.createElement('li');
     const img = document.createElement('img');
     img.src = item.thumbnail;
