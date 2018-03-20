@@ -26,8 +26,8 @@ for (let i = 0; i < picArray.length; i++) {
 
 const links = document.querySelectorAll('li');
 
-for (let i = 0; i < picArray.length; i++) {
-    picArray[i].addEventListener('click', (evt) => {
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', (evt) => {
         console.log(evt.target);
         // TODO
         // print the title property of selected item to console
